@@ -159,6 +159,7 @@
   }
   .show-links {
     height: 10rem;
+    display: block;
   }
   @media screen and (min-width: 800px) {
     .nav-center {
