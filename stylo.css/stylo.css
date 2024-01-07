@@ -27,6 +27,18 @@ a {
   background-color: black;
 }
 
+.body-nosotros {
+  background-color: black;
+}
+
+.body-productos {
+  background-color: black;
+}
+
+.body-contacto {
+  background-color: black;
+}
+
 nav {
     background: var(--clr-white);
     box-shadow: var(--light-shadow);
@@ -104,7 +116,9 @@ nav {
   background-color: gray;
   overflow: hidden;
   border-radius: 15px;
+  box-shadow: 15px;
 }
+
 .imagen-card {
   width: 300px;
 }
