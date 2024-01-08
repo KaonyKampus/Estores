@@ -106,6 +106,20 @@ nav {
     height: 10rem;
     display: block;
 }
+
+.main-content {
+ padding-top: 80px;
+}
+
+.titulo-nosotros {
+  padding-top: px;
+  color: white;
+  text-align: center;
+  font-family: 'Long Cang', cursive;
+  font-size: 60px;
+}
+
+
 /*cajas de productos*/
 .titulo-cortinas {
   padding-top: 100px;
