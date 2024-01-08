@@ -43,6 +43,9 @@ nav {
     background: var(--clr-white);
     box-shadow: var(--light-shadow);
     background-color: white;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
   }
 
 .nav-header {
@@ -50,6 +53,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+
 }
 
 .nav-toggle {
@@ -72,7 +76,7 @@ nav {
 
 .links a {
     color: var(--clr-grey-3);
-    font-size: 25px;
+    font-size: 28px;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     display: block;
@@ -103,6 +107,21 @@ nav {
     display: block;
 }
 /*cajas de productos*/
+.titulo-cortinas {
+  padding-top: 100px;
+  color: white;
+  text-align: center;
+  font-family: 'Long Cang', cursive;
+  font-size: 60px;
+}
+
+.titulo-persianas {
+  color: white;
+  text-align: center;
+  font-family: 'Long Cang', cursive;
+  font-size: 60px;
+}
+
 .cajas-productos {
   padding: 50px 50px 50px 50px;
 }
@@ -140,8 +159,35 @@ nav {
   padding-left: 12px;
 }
 
+.contenedor-cajas-p::-webkit-scrollbar {
+  width: 250px;
+}
+.contenedor-cajas-p::-webkit-scrollbar-track {
+  background-color: #000000;
+  border-radius: 15px;
+}
+
+.contenedor-cajas-p::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 15px;
+}
+
+.contenedor-cajas-p::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+}
 
 
+
+
+.pie-caja {
+  background-color: white;
+}
+
+.texto-contactanos {
+  text-align: center;
+  font-family: 'Long Cang', cursive;
+  font-size: 25px;
+}
 
 .pie-pagina-completo {
   padding-top: 10px;
