@@ -128,9 +128,9 @@ nav {
 .titulo-principal {
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
   font-family: 'Long Cang', cursive;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
 }
 
@@ -142,6 +142,7 @@ display: flex;
 overflow-x: auto;
 gap: 20px;
 margin: 20px;
+padding-bottom: 25px;
 }
 
 
@@ -216,6 +217,7 @@ margin: 20px;
 }
 
 .pie-caja {
+  margin-top: 100px;
   background-color: whitesmoke;
 }
 
