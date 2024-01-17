@@ -14,6 +14,7 @@ navToggle.addEventListener("click", function () {
 
 
 
+
 /*arrays para los productos*/
 let PRODUCTOS = [
   {id:10001,nombre:"Toldos",precio:10000,imagen: "./images/toldo.png"},
@@ -64,7 +65,7 @@ function agregarAlCarrito (idProducto){
 //actualizar y visualizar carrito
 
 function actualizarCarrito (){
-   const carritoElement = document.getElementById ("carrito");
+   const carritoElement = document.getElementById ("total");
    carritoElement.innerHTML = " ";
    CARRITO.forEach( producto =>{
     const card = document.createElement ("div");
@@ -81,3 +82,6 @@ function actualizarCarrito (){
 
 
 crearCards() 
+
+
+
