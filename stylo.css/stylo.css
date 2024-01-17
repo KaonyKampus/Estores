@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
-  *,
-::after,::before {
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +9,7 @@
     font-family: 'Long Cang', cursive;
     text-align: center;
     font-size: 60px;
-    color: black;
+    color: grey;
     background-color: white;
 }
 
@@ -24,7 +23,7 @@ a {
 }
 
 .body-index {
-  background-color: black;
+  background-color: white;
 }
 
 .body-nosotros {
@@ -112,101 +111,67 @@ nav {
 }
 
 #buscador {
-  position:;
+  font-family: 'Long Cang', cursive;
+  font-size: 600px;
+  color: #000000;
   text-align: center;
   justify-content: center;
   align-content: center;
   display: block;
   margin:0 auto;
   padding: 5px 5px 5px 5px;
-  font-size: 16px;
+  font-size: 20px;
   width: 800px;
+  border-radius: 5px;
 }
 
-.titulo-nosotros {
-  padding-top: px;
-  color: white;
+.titulo-principal {
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: 'Long Cang', cursive;
-  font-size: 60px;
+  font-size: 40px;
+  color: grey;
 }
 
 
-/*cajas de productos*/
-.titulo-cortinas {
-  padding-top: 100px;
-  color: white;
-  text-align: center;
-  font-family: 'Long Cang', cursive;
-  font-size: 60px;
-}
 
-.titulo-persianas {
-  color: white;
-  text-align: center;
-  font-family: 'Long Cang', cursive;
-  font-size: 60px;
-}
+#carrito {
+width: auto;
+display: flex;
+overflow-x: auto;
+gap: 20px;
 
-.cajas-productos {
-  padding: 50px 50px 50px 50px;
-}
-
-.contenedor-cajas-p {
-  display: flex;
-  gap: 100px;
-  justify-content:left;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  margin-left: 50px;
-  margin-right: 50px;
-  overflow-x:auto;
-  white-space: nonwrap;
-  padding-bottom: 50px;
-  padding-right: 20px;
 }
 
 
-.caja-card {
-  flex: 0 0 auto;
-  width: 300px;
-  color: white;
-  background-color: gray;
-  overflow: hidden;
+#carrito::-webkit-scrollbar {
+  width: 120px;
+}
+
+#carrito::-webkit-scrollbar-track {
+  background-color: #3333cc;
   border-radius: 15px;
-  box-shadow: 15px;
 }
 
-.imagen-card {
-  width: 300px;
+#carrito::-webkit-scrollbar-thumb {
+  background-color: #ee5a5a4d;
+  border-radius: 15px;
 }
 
-.informacion-cards {
-  padding-left: 12px;
+#carrito::-webkit-scrollbar-thumb:hover {
+  background-color: #b500da;
 }
 
-.contenedor-cajas-p::-webkit-scrollbar {
+.card{
+  border: 1px solid black;
   width: 250px;
-}
-.contenedor-cajas-p::-webkit-scrollbar-track {
-  background-color: #000000;
-  border-radius: 15px;
+  flex:0 0 auto;
+  margin-bottom: 15px;
 }
 
-.contenedor-cajas-p::-webkit-scrollbar-thumb {
-  background-color: gray;
-  border-radius: 15px;
-}
-
-.contenedor-cajas-p::-webkit-scrollbar-thumb:hover {
-  background-color: #ffffff;
-}
-
-
-
-
-.pie-caja {
-  background-color: whitesmoke;
+.nombre-producto {
+  color: blue;
 }
 
 .texto-contactanos {
