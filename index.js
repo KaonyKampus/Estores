@@ -26,7 +26,7 @@ let PRODUCTOS = [
   {id:90006,nombre:"Persianas dos en uno",precio:10000, imagen: "./images/persiana_dosuno.png"},
   {id:90007,nombre:"Cortinas Verticales",precio:10000, imagen: "./images/persiana_vertical.png"},
   {id:90008,nombre:"Cortinas Hanas",precio:10000, imagen: "./images/cortina_hanas.png"},
-  {id:90009,nombre:"Cortinas Personalizadas Estampadas",precio:10000, imagen: "./images/estampadas.png"},
+  {id:90009,nombre:"Cortinas Personalizadas",precio:10000, imagen: "./images/estampadas.png"},
 ] 
 
 const CARRITO = [];

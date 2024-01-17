@@ -168,7 +168,7 @@ padding-bottom: 25px;
   display: flex;
   flex-direction: column; /* Alinea los elementos verticalmente */
   border: 1px solid white;
-  width: 250px;
+  width: 300px;
   flex:0 0 auto;
   margin-bottom: 15px;
   padding: 10px;
@@ -182,11 +182,14 @@ padding-bottom: 25px;
 }
 
 .nombre-producto {
-  color: white;
+  color: whitesmoke;
+  font-size: 20px;
 }
 
 .precio {
   color: white;
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
 
 .boton-compra {
