@@ -78,6 +78,16 @@ function actualizarCarrito (){
     carritoElement.appendChild (card);
   })
 
+  sumarTotal()
+
+}
+
+function sumarTotal(){
+  const totalElement = document.getElementById("final")
+  const total = CARRITO.reduce((acc, producto) => acc + producto.precio, 0)
+  totalElement.innerHTML = `
+                            <p class="totalCarro"> total: $${total}
+  `;
 }
 
 
