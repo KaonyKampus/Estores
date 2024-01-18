@@ -213,16 +213,28 @@ padding-bottom: 25px;
   
 }
 
+.listaTareas {
+  color: white;
+  text-align: center;
+}
+
+.caja-tareas  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 
 .texto-contactanos {
   text-align: center;
   font-family: 'Long Cang', cursive;
-  font-size: 25px;
+  font-size: 30px;
   padding-bottom: 8PX;
 }
 .parrafo-contactanos{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0px 80px 0px 80px;
 
 }
 
@@ -243,7 +255,12 @@ padding-bottom: 25px;
 width: 50px;
 }
 
-
+.derechos {
+  background-color: #c5dac641;
+  margin-top: 8px;
+  padding:10px 0px 10px 0px;
+  text-align: center;
+}
 
   
 @media screen and (min-width: 800px) {
