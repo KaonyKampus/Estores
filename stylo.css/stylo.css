@@ -206,7 +206,11 @@ padding-bottom: 25px;
 }
 
 .totalCarro {
-  color: white;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 25px;
+  background-color: #4CAF50;
+  
 }
 
 
