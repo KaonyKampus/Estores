@@ -111,6 +111,18 @@ nav {
 }
 
 
+.fondo-p {
+margin: auto;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.imagen-fondo{
+  width: 80%;
+  opacity: 0.7;
+  background-color: white;
+}
 
 
 .titulo-principal {
@@ -163,7 +175,6 @@ padding-bottom: 25px;
   padding: 10px;
   text-align: center;
 }
-
 
 
 .card button.boton-compra {
@@ -240,15 +251,16 @@ padding-bottom: 25px;
 
 .pie-caja {
   margin-top: 100px;
-  background-color: whitesmoke;
+  background-color: #4CAF50;
 }
 
 .pie-pagina-completo {
   padding-top: 10px;
+  margin: 10px;
   justify-content:  center;
   display: flex;
   gap: 30px;
-  background-color: whitesmoke;
+  background-color: #4CAF50;
 }
 
 .iconos {
@@ -256,7 +268,7 @@ width: 50px;
 }
 
 .derechos {
-  background-color: #c5dac641;
+  background-color: rgb(25, 99, 23);
   margin-top: 8px;
   padding:10px 0px 10px 0px;
   text-align: center;
