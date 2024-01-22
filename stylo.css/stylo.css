@@ -146,6 +146,12 @@ margin: 20px;
 padding-bottom: 25px;
 }
 
+#total {
+  padding: 20px;
+  background-color: rgb(75, 13, 13);
+  display: flex;
+  justify-content: center;
+}
 
 #carrito::-webkit-scrollbar {
   width: 120px;
