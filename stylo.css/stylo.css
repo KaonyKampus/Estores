@@ -111,12 +111,65 @@ nav {
 }
 
 
-.fondo-p {
-margin: auto;
-width: 100%;
-display: flex;
-justify-content: center;
+.contenedor-carrousel{
+    position:relative;
+    max-width: 800px;
+    margin: 20px auto;
 }
+
+.carrousel{
+  display: flex;
+  overflow: hidden;
+}
+
+.slide{
+    flex: 0 0 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.botones-carrusel1 {
+  position: absolute;
+  top: 50%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5625rem;
+  color: black;
+  background-color: rgba(102, 102, 102, 0.452);
+  padding: .625rem; 
+}
+
+
+.botones-carrusel2 {
+  position: absolute;
+  top: 50%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5625rem;
+  color: black;
+  background-color: rgba(102, 102, 102, 0.452);
+  padding: .625rem;
+}
+
+#anteriorBtn {
+  left: .625rem;
+}
+
+.botones-carrusel1:hover {
+  background-color: lightblue;
+}
+
+.botones-carrusel2:hover {
+  background-color: lightblue;
+}
+
+#siguienteBtn {
+  right: .625rem;
+}
+
 
 .imagen-fondo{
   width: 80%;
