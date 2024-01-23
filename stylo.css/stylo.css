@@ -119,13 +119,13 @@ nav {
 
 .carrousel{
   display: flex;
+  gap: 0;
   overflow: hidden;
-  transform: translate3d(0, 0, 0);
 }
 
 .slide{
     flex: 0 0 100%;
-    transition: transform 0.5s ease-in-out;
+
 }
 
 .slide img {
