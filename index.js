@@ -18,11 +18,12 @@ navToggle.addEventListener("click", function () {
   
     let imagenCero = 0;
 
-    siguienteBtn = addEventListener("click", () => {
+
+    siguienteBtn.addEventListener ("click", () => {
           showSlide(imagenCero + 1)
     })
 
-    anteriorBtn = addEventListener("click", () => {
+    anteriorBtn.addEventListener ("click", () => {
       showSlide(imagenCero - 1)
     })
 
@@ -31,14 +32,14 @@ navToggle.addEventListener("click", function () {
 
     function showSlide(index) {
       imagenCero = (index + SLIDE.length)  % SLIDE.length;
-      CARROUSEL.style.transform = "transtaleX(${-imagenCero * 100}%)";
+      CARROUSEL.style.transform = `translateX(${-imagenCero * 100}%)`;
     }
 
     function moverSola() {
       showSlide(imagenCero + 1)
     }
 
-    setInterval(moverSola, 3000)
+    setInterval(moverSola, 3000);
 
   });
 
