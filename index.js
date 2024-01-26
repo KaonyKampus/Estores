@@ -8,41 +8,24 @@ navToggle.addEventListener("click", function () {
 });
 
 /*carrusel */
- document.addEventListener("DOMContentLoaded", ()=> { 
-    const CARROUSEL  = document.querySelector(".carrousel")
-    const SLIDE = document.querySelectorAll(".slide")
-    
-    const anteriorBtn = document.getElementById ("anteriorBtn")
-    const siguienteBtn = document.getElementById ("siguienteBtn")
+let sliderInner = document.querySelector(".slider--inner");
 
+let images = sliderInner.querySelectorAll(".imafenes-carrusel")
+
+let index = 1;
+setInterval(function(){
+  let percentage = index * -100;
+
+
+  sliderInner.computedStyleMap.transform = "translateX("+ percentage + "%)";
+  if(index > (images.length -1 )) {
+    index = 0
+  }
   
-    let imagenCero = 0;
+  
+  index ++ ;
 
-
-    siguienteBtn.addEventListener ("click", () => {
-          showSlide(imagenCero + 1)
-    })
-
-    anteriorBtn.addEventListener ("click", () => {
-      showSlide(imagenCero - 1)
-    })
-
-
-
-
-    function showSlide(index) {
-      imagenCero = (index + SLIDE.length)  % SLIDE.length;
-      CARROUSEL.style.transform = `translateX(${-imagenCero * 100}%)`;
-    }
-
-    function moverSola() {
-      showSlide(imagenCero + 1)
-    }
-
-    setInterval(moverSola, 3000);
-
-  });
-
+},5000)
 
 
 /*carrito de compras*/
