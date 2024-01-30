@@ -107,13 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-const BOTONTOTAL = document.querySelector(".comprarBoton");
-
-function comprarTotal() {
-  if (CARRITO.length > 0) {
-    alert("Compra Exitosa");
-  } else {
-    alert("Seleccione sus productos por favor");
-  }
+function crearBotonCompra () {
+      const finalCompra = document.createElement("button");
+      finalCompra.innerHTML = "";
+      
 }
