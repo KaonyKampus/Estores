@@ -2,30 +2,12 @@
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
 
+
 navToggle.addEventListener("click", function () {
   console.log("Click event");
   links.classList.toggle("show-links");
 });
 
-/*carrusel */
-let sliderInner = document.querySelector(".slider--inner");
-
-let images = sliderInner.querySelectorAll(".imafenes-carrusel")
-
-let index = 1;
-setInterval(function(){
-  let percentage = index * -100;
-
-
-  sliderInner.computedStyleMap.transform = "translateX("+ percentage + "%)";
-  if(index > (images.length -1 )) {
-    index = 0
-  }
-  
-  
-  index ++ ;
-
-},5000)
 
 
 /*carrito de compras*/
@@ -75,12 +57,22 @@ function actualizarCarrito() {
   });
 
   sumarTotal();
+
+  guardarCarritoEnLocalStorage();
 }
 
 function sumarTotal() {
   const totalElement = document.getElementById("final");
   const total = CARRITO.reduce((acc, producto) => acc + producto.precio, 0);
   totalElement.innerHTML = `<p class="totalCarro"> total: $${total}</p>`;
+}
+
+function cargarCarritoDesdeLocalStorage() {
+  const carritoGuardado = localStorage.getItem('carrito');
+  if (carritoGuardado) {
+    CARRITO.length = 0; // Clear existing cart
+    CARRITO.push(...JSON.parse(carritoGuardado));
+  }
 }
 
 function crearCards() {
@@ -104,9 +96,24 @@ function crearCards() {
 document.addEventListener('DOMContentLoaded', function () {
   const currentPage = window.location.pathname;
 
+  cargarCarritoDesdeLocalStorage();
+
   if (currentPage.includes('./pages/shopping-car.html')) {
     crearCarrito();
   } else {
     crearCards();
   }
 });
+
+
+
+
+const BOTONTOTAL = document.querySelector(".comprarBoton");
+
+function comprarTotal() {
+  if (CARRITO.length > 0) {
+    alert("Compra Exitosa");
+  } else {
+    alert("Seleccione sus productos por favor");
+  }
+}
